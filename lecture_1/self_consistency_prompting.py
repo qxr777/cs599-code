@@ -11,8 +11,7 @@ load_dotenv()
 NUM_RUNS_TIMES = 5
 
 # TODO: 完善此提示词！尽量让所有运行结果的正确率接近 100%。
-YOUR_SYSTEM_PROMPT = ""
-
+YOUR_SYSTEM_PROMPT = """
 关键规则：
 - 在给出最终答案前，清晰地展示你的推理过程。
 - 算术计算必须极其精确。
