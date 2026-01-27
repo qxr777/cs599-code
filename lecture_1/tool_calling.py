@@ -74,8 +74,25 @@ TOOL_REGISTRY: Dict[str, Callable[..., str]] = {
 # 提示词脚手架
 # ==========================
 
-# TODO: Fill this in!
-YOUR_SYSTEM_PROMPT = ""
+# 系统提示词：指导模型如何调用工具
+YOUR_SYSTEM_PROMPT = """你是一个工具调用助手。你可以调用以下工具：
+
+**工具名称**: output_every_func_return_type
+**功能**: 分析 Python 文件，返回所有顶级函数的函数名和返回类型
+**参数**:
+  - file_path (可选): Python 文件路径。如果不提供，则分析当前文件
+
+**你的任务**:
+调用 output_every_func_return_type 工具来分析当前 Python 文件。
+
+**输出格式要求**:
+你必须只输出一个 JSON 对象，格式如下：
+{
+  "tool": "output_every_func_return_type",
+  "args": {}
+}
+
+不要输出任何解释、开场白或其他文字，只输出 JSON 对象。"""
 
 
 def resolve_path(p: str) -> str:
