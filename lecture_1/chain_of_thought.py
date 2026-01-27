@@ -10,11 +10,7 @@ load_dotenv()
 NUM_RUNS_TIMES = 5
 
 # TODO: 在此处填入你的系统提示词！
-YOUR_SYSTEM_PROMPT = """你是一个精通数学和逻辑推理的专家。
-在解决数学问题时，请遵循以下原则：
-1. 深入分析问题的核心，寻找最优雅的数学方案（如利用欧拉定理）。
-2. 展示详细的思维链（Chain of Thought）步骤。
-3. 在最后一行，严格以 "Answer: <数字>" 的格式输出最终答案。"""
+YOUR_SYSTEM_PROMPT = ""
 
 
 USER_PROMPT = """

@@ -42,10 +42,7 @@ QUESTION = (
 
 
 # TODO: 在此处填入你的系统提示词！
-YOUR_SYSTEM_PROMPT = (
-    "你是一个专业的代码助手，负责根据提供的上下文编写 Python 代码。"
-    "请严格遵循要求，并仅在 Markdown Python 代码块中返回代码。"
-)
+YOUR_SYSTEM_PROMPT = ""
 
 
 # 验证代码是否包含必要的片段（而非精确字符串匹配）

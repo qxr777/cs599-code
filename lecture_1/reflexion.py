@@ -12,23 +12,12 @@ NUM_RUNS_TIMES = 1
 
 # --- 提示词配置 ---
 
-# TODO: 完善此提示词！
 SYSTEM_PROMPT = """你是一个编程助手。
 请仅输出一个包含 Python 代码块的响应，定义函数 is_valid_password(password: str) -> bool。
 不要输出任何开场白、解释或注释。保持实现精简。"""
 
-YOUR_REFLEXION_PROMPT = """你是一个负责修复有缺陷的密码校验函数的编程助手。
-
-你会收到：
-1. 先前的 is_valid_password 实现代码。
-2. 明确指出问题的测试失败案例。
-
-你的任务：
-- 分析失败原因，理解密码校验规则。
-- 修复代码以通过所有测试。
-- 仅输出一个包含修复后 counts is_valid_password 函数的 Python 代码块。
-- 不要包含任何解释、注释或示例用法。
-- 函数名称必须严格保持为：is_valid_password"""
+# TODO: Fill this in!
+YOUR_REFLEXION_PROMPT = ""
 
 
 # 用于评估生成代码的基准测试集

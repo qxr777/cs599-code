@@ -6,22 +6,10 @@ from ollama import chat
 load_dotenv()
 
 # 测试运行的最大次数
-NUM_RUNS_TIMES = 10
+NUM_RUNS_TIMES = 5
 
 # TODO: 在此处填入你的系统提示词！
-# YOUR_SYSTEM_PROMPT = ""
-YOUR_SYSTEM_PROMPT = """你是一个文本转换专家。你的任务是将任何给定的单词中的字母顺序进行反转。
-
-示例 (K-Shot):
-- 输入: "hello" → 输出: "olleh"
-- 输入: "world" → 输出: "dlrow"
-- 输入: "python" → 输出: "nohtyp"
-- 输入: "test" → 输出: "tset"
-
-规则:
-1. 只输出反转后的单词，不要输出任何其他内容。
-2. 不要包含解释、引号或任何额外文本。
-3. 严格按照输入的内容进行处理。"""
+YOUR_SYSTEM_PROMPT = ""
 
 USER_PROMPT = """
 反转以下单词的字母顺序。只输出反转后的单词，不要包含其他文字：
