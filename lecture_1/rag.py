@@ -62,7 +62,6 @@ def YOUR_CONTEXT_PROVIDER(corpus: List[str]) -> List[str]:
     """
     # TODO: 选择并返回与任务相关的语料
     return corpus
-    # return []
 
 
 def make_user_prompt(question: str, context_docs: List[str]) -> str:
