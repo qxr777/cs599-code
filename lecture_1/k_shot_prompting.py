@@ -29,7 +29,7 @@ def test_your_prompt(system_prompt: str) -> bool:
     for idx in range(NUM_RUNS_TIMES):
         print(f"正在执行测试 {idx + 1} / {NUM_RUNS_TIMES}")
         response = chat(
-            model="mistral-nemo:12b",
+            model="deepseek-r1:8b",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": USER_PROMPT},
@@ -37,10 +37,15 @@ def test_your_prompt(system_prompt: str) -> bool:
             options={"temperature": 0.5},
         )
         output_text = response.message.content.strip()
+        # 移除 <think> 块（针对 reasoning 模型）
+        import re
+        output_text = re.sub(r'<think>[\s\S]*?</think>', '', output_text).strip()
+        
         if output_text.strip() == EXPECTED_OUTPUT.strip():
             print("✨ 测试通过 (SUCCESS)")
             return True
         else:
+            print(f"DEBUG: 完整回复: {response.message.content}")
             print(f"❌ 预期回答: {EXPECTED_OUTPUT}")
             print(f"❌ 实际回答: {output_text}")
             print("-" * 20)
