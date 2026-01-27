@@ -61,8 +61,7 @@ def YOUR_CONTEXT_PROVIDER(corpus: List[str]) -> List[str]:
     例如：返回 [] 模拟缺失上下文，或返回 [corpus[0]] 包含 API 文档。
     """
     # TODO: 选择并返回与任务相关的语料
-    return corpus
-    # return []
+    return []
 
 
 def make_user_prompt(question: str, context_docs: List[str]) -> str:
