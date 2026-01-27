@@ -64,6 +64,7 @@ def YOUR_CONTEXT_PROVIDER(corpus: List[str]) -> List[str]:
     return corpus
 
 
+
 def make_user_prompt(question: str, context_docs: List[str]) -> str:
     """构建包含上下文及任务要求的用户提示词。"""
     if context_docs:

@@ -21,4 +21,5 @@ env/
 *.swo
 
 # 项目特定
-lecture_1/data/
+lab_1/data/
+lab_2/data/

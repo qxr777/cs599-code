@@ -20,6 +20,7 @@ YOUR_SYSTEM_PROMPT = """
 - 答案必须是一个单一的数字。
 - 反复检查你的计算过程。"""
 
+
 USER_PROMPT = """
 请解决这个问题，并在最后一行给出最终答案，格式为 "Answer: <数字>"。
 
@@ -30,8 +31,8 @@ USER_PROMPT = """
 # 预期输出答案
 EXPECTED_OUTPUT = "Answer: 25"
 
-
 def extract_final_answer(text: str) -> str:
+
     """从详细的推理链中提取最后一行 'Answer: ...'。
 
     - 寻找最后一行以 'Answer:' 开头（忽略大小写）的内容。
