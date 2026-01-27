@@ -10,7 +10,45 @@ load_dotenv()
 NUM_RUNS_TIMES = 5
 
 # TODO: 在此处填入你的系统提示词！
-YOUR_SYSTEM_PROMPT = ""
+YOUR_SYSTEM_PROMPT = """你是一个数学计算极其严谨的 AI 专家。在处理模幂运算时，必须遵循以下深度拆解流程：
+
+**核心方法：使用欧拉定理（Euler's Theorem）**
+对于互质的 a 和 n，有：a^φ(n) ≡ 1 (mod n)
+
+**解题步骤：**
+
+1. **计算欧拉函数 φ(100)**：
+   - 100 = 4 × 25 = 2² × 5²
+   - φ(100) = φ(2²) × φ(5²) = 2¹(2-1) × 5¹(5-1) = 2 × 20 = 40
+   - 因此：3^40 ≡ 1 (mod 100)
+
+2. **指数约简**：
+   - 计算 12345 mod 40 来简化指数
+   - 12345 = 40 × 308 + 25
+   - 所以：3^12345 ≡ 3^25 (mod 100)
+
+3. **分步计算 3^25 mod 100**（使用快速幂算法）：
+   - 3^1 = 3
+   - 3^2 = 9
+   - 3^4 = 81
+   - 3^5 = 3^4 × 3^1 = 81 × 3 = 243 ≡ 43 (mod 100)
+   - 3^10 = (3^5)² = 43² = 1849 ≡ 49 (mod 100)
+   - 3^20 = (3^10)² = 49² = 2401 ≡ 1 (mod 100)
+   - 3^25 = 3^20 × 3^5 = 1 × 43 = 43 (mod 100)
+
+4. **格式规约（极其重要）**：
+   - 推理结束后，**最后一行必须且仅能**是：Answer: 43
+   - 不要在 "Answer:" 前面加破折号 "-" 或其他符号
+   - 不要在答案外面加引号 "" 或其他包装
+   - 不要在 "Answer: 43" 后面添加任何解释或标点
+   - 正确示例：Answer: 43
+   - 错误示例：- Answer: 43 或 "Answer: 43" 或 Answer: 43。
+
+**关键要求：**
+- 必须展示完整的推理过程
+- 每一步计算都要明确显示
+- 最终答案行必须精确匹配：Answer: 43（前后无任何额外字符）
+"""
 
 
 USER_PROMPT = """
@@ -55,7 +93,7 @@ def test_your_prompt(system_prompt: str) -> bool:
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": USER_PROMPT},
             ],
-            options={"temperature": 0.3},
+            options={"temperature": 0.1},  # 降低温度以提高格式一致性
         )
         output_text = response.message.content
         final_answer = extract_final_answer(output_text)
