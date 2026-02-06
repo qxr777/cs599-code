@@ -104,14 +104,11 @@ graph TD
 1. **安装 GitHub Spec Kit CLI**
 
 ```bash
-# 使用 npm 安装 (推荐)
-npm install -g @github/specify-cli
-
-# 或使用 yarn
-yarn global add @github/specify-cli
+# 使用 uv 安装 (推荐)
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
 
 # 验证安装
-specify --version
+specify check
 ```
 
 2. **配置 AI 编码助手**
@@ -133,15 +130,21 @@ cd my-pomodoro-timer
 git init
 
 # 初始化 Spec Kit
-specify init
+specify init .
+
+Choose your AI assistant:
+ >gemini
+
+Choose script type (or press Enter)
+ >sh
 ```
+
 
 **交付物**:
 
 - [ ] Spec Kit CLI 安装截图
 - [ ] AI 助手配置截图
 - [ ] 项目仓库初始化截图
-- [ ] `setup-report.md` 文件,记录环境准备过程
 
 **评分标准**:
 - 工具安装正确 (2%)
@@ -166,7 +169,8 @@ specify init
 1. **运行 Spec Kit 命令**
 
 ```bash
-specify constitution
+# 在聊天对话框中输入slash命令
+/speckit.constitution 番茄计时器
 ```
 
 AI 会引导你回答一系列问题,例如:
@@ -177,7 +181,7 @@ AI 会引导你回答一系列问题,例如:
 
 2. **审查生成的宪法文档**
 
-Spec Kit 会生成 `specs/constitution.md` 文件,你需要仔细审查:
+Spec Kit 会生成 `.specify/memory/constitution.md` 文件,你需要仔细审查:
 
 ```markdown
 # 项目宪法示例
@@ -204,7 +208,7 @@ Spec Kit 会生成 `specs/constitution.md` 文件,你需要仔细审查:
 
 **交付物**:
 
-- [ ] `specs/constitution.md` - 项目宪法文档
+- [ ] `.specify/memory/constitution.md` - 项目宪法文档
 
 **评分标准**:
 - 宪法内容完整、合理 (10%)
@@ -221,7 +225,8 @@ Spec Kit 会生成 `specs/constitution.md` 文件,你需要仔细审查:
 1. **运行 Spec Kit 命令**
 
 ```bash
-specify create pomodoro-timer
+# 在聊天对话框中输入slash命令
+/speckit.specify
 ```
 
 AI 会询问你项目的需求,你需要描述:
@@ -246,7 +251,7 @@ AI 会询问你项目的需求,你需要描述:
 
 2. **审查生成的规格文档**
 
-Spec Kit 会生成 `specs/pomodoro-timer/specification.md`,包含:
+Spec Kit 会生成 `specs/001-pomodoro-timer/spec.md`,包含:
 
 - **User Scenarios \u0026 Testing** (用户场景与测试)
 - **Requirements** (功能需求)
@@ -321,7 +326,8 @@ Spec Kit 会生成 `specs/pomodoro-timer/specification.md`,包含:
 3. **使用 Clarify 命令澄清模糊点**
 
 ```bash
-specify clarify pomodoro-timer
+# 在聊天对话框中输入slash命令
+/speckit.clarify
 ```
 
 AI 会识别规格中的模糊或不完整的部分,例如:
@@ -331,7 +337,7 @@ AI 会识别规格中的模糊或不完整的部分,例如:
 
 **交付物**:
 
-- [ ] `specs/pomodoro-timer/specification.md` - 需求规格文档
+- [ ] `specs/001-pomodoro-timer/spec.md` - 需求规格文档
 
 **评分标准**:
 - 用户故事清晰、可独立测试 (8%)
@@ -350,7 +356,8 @@ AI 会识别规格中的模糊或不完整的部分,例如:
 1. **运行 Spec Kit 命令**
 
 ```bash
-specify plan pomodoro-timer
+# 在聊天对话框中输入slash命令
+/speckit.plan
 ```
 
 AI 会根据需求规格和项目宪法,生成技术架构和实施计划。
@@ -362,7 +369,7 @@ AI 会根据需求规格和项目宪法,生成技术架构和实施计划。
 
 2. **审查生成的计划文档**
 
-Spec Kit 会生成 `specs/pomodoro-timer/plan.md`,包含:
+Spec Kit 会生成 `specs/001-pomodoro-timer/plan.md`,包含:
 
 **必须包含的内容**:
 
@@ -467,7 +474,7 @@ AI 会根据技术计划,将项目分解为具体的开发任务。
 
 2. **审查生成的任务文档**
 
-Spec Kit 会生成 `specs/pomodoro-timer/tasks.md`,包含:
+Spec Kit 会生成 `specs/001-pomodoro-timer/tasks.md`,包含:
 
 **必须包含的内容**:
 
@@ -526,7 +533,7 @@ Spec Kit 会生成 `specs/pomodoro-timer/tasks.md`,包含:
 
 **交付物**:
 
-- [ ] `specs/pomodoro-timer/tasks.md` - 任务清单文档
+- [ ] `specs/001-pomodoro-timer/tasks.md` - 任务清单文档
 
 **评分标准**:
 - 任务分解合理、粒度适中 (5%)
@@ -544,7 +551,8 @@ Spec Kit 会生成 `specs/pomodoro-timer/tasks.md`,包含:
 1. **使用 Spec Kit 自动实现 (推荐)**
 
 ```bash
-specify implement pomodoro-timer
+# 在聊天对话框中输入slash命令
+/speckit.implement
 ```
 
 AI 会按照任务清单逐步生成代码。你需要:
@@ -632,7 +640,7 @@ describe('useTimer', () => {
 
 1. **创建验证报告**
 
-创建 `specs/pomodoro-timer/verification.md`,逐一验证:
+创建 `specs/001-pomodoro-timer/verification.md`,逐一验证:
 
 - 所有用户故事的验收场景
 - 所有功能需求
@@ -698,7 +706,7 @@ describe('useTimer', () => {
 
 2. **创建最终报告**
 
-创建 `specs/pomodoro-timer/final-report.md`:
+创建 `specs/001-pomodoro-timer/final-report.md`:
 
 ```markdown
 # 最终报告
@@ -817,9 +825,9 @@ GitHub Spec Kit 工具让这个过程更加系统化和自动化,AI 辅助生成
 
 **交付物**:
 
-- [ ] `specs/pomodoro-timer/verification.md` - 验证报告
-- [ ] `specs/pomodoro-timer/final-report.md` - 最终报告
-- [ ] 验证截图(在 `specs/pomodoro-timer/screenshots/` 目录)
+- [ ] `specs/001-pomodoro-timer/verification.md` - 验证报告
+- [ ] `specs/001-pomodoro-timer/final-report.md` - 最终报告
+- [ ] 验证截图(在 `specs/001-pomodoro-timer/screenshots/` 目录)
 
 **评分标准**:
 - 验证完整、系统 (5%)
