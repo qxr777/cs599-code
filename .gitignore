@@ -24,3 +24,5 @@ env/
 lab_1/data/
 lab_2/data/
 lab_12/my_ai_predictions/exit_statuses_*.yaml
+lab_12/SWE-bench
+lab_12/mini-swe-agent
