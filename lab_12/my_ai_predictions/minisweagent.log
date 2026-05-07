@@ -1,0 +1,251 @@
+2026-02-21 16:22:40,786 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 16:22:46,892 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 16:22:46,894 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 16:22:46,894 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/mini.yaml']
+2026-02-21 16:22:50,371 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-08cd804a -w / --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 16:24:26,340 - minisweagent.environment - INFO - Started container minisweagent-08cd804a with ID 14f0d4e2a45cc198c9cd20bd957839d87cc5ebf58bb99376c1843125e75efcc1
+2026-02-21 16:47:21,564 - minisweagent - INFO - Cancelling all pending jobs. Press ^C again to exit immediately.
+2026-02-21 16:50:29,458 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 16:50:37,025 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 16:50:37,026 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 16:50:37,026 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/mini.yaml']
+2026-02-21 16:50:39,997 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-9fb61083 -w / --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 16:50:40,414 - minisweagent.environment - INFO - Started container minisweagent-9fb61083 with ID c4c6ae4e1af4a451fb3e62eb0f10b355ee8a811f7884fa1da96f53c10d4fa8f7
+2026-02-21 16:52:25,275 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4992/pallets__flask-4992.traj.json'
+2026-02-21 17:08:04,020 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 17:08:18,371 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 17:08:18,374 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 17:08:18,375 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/mini.yaml']
+2026-02-21 17:08:21,342 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-13386187 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 17:08:21,827 - minisweagent.environment - INFO - Started container minisweagent-13386187 with ID b3f4270aa6d1abe0616ebbde008c183d42e67456f0b631ee4ab1c4eb4d1e566d
+2026-02-21 17:11:00,263 - minisweagent - INFO - Cancelling all pending jobs. Press ^C again to exit immediately.
+2026-02-21 17:12:55,431 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 17:13:02,138 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 17:13:02,139 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 17:13:02,139 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/mini.yaml']
+2026-02-21 17:13:05,118 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-f859b01c -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 17:13:05,459 - minisweagent.environment - INFO - Started container minisweagent-f859b01c with ID ef4971aa403cabbc57313f6feab55503c92e6be29722f1039616169f5350fca7
+2026-02-21 17:14:56,845 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4992/pallets__flask-4992.traj.json'
+2026-02-21 17:27:08,531 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 17:27:19,345 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 17:27:19,347 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 17:27:19,348 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/my_model.yaml']
+2026-02-21 17:28:40,879 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 17:28:51,877 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 17:28:51,879 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 17:28:51,879 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 17:28:54,767 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-c23c2854 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 17:28:55,011 - minisweagent.environment - INFO - Started container minisweagent-c23c2854 with ID d043a8cf7b5bf23054c214095727677bc220d68f09552bbbfb4eb0aaf9c90b2b
+2026-02-21 17:30:42,799 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4992/pallets__flask-4992.traj.json'
+2026-02-21 17:37:07,368 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split dev...
+2026-02-21 17:37:14,718 - minisweagent - INFO - Instance filter: 23 -> 0 instances
+2026-02-21 17:37:14,720 - minisweagent - INFO - Running on 0 instances...
+2026-02-21 17:37:14,720 - minisweagent - INFO - Building agent config from specs: ['mini']
+2026-02-21 17:37:52,438 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 17:37:59,314 - minisweagent - INFO - Instance filter: 300 -> 2 instances
+2026-02-21 17:37:59,316 - minisweagent - INFO - Running on 2 instances...
+2026-02-21 17:37:59,317 - minisweagent - INFO - Building agent config from specs: ['mini']
+2026-02-21 17:37:59,329 - minisweagent - ERROR - Error in future for instance pallets__flask-4045: No module named 'litellm'
+Traceback (most recent call last):
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/run/benchmarks/swebench.py", line 262, in process_futures
+    future.result()
+  File "/usr/local/Cellar/python@3.12/3.12.12_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.12_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/Cellar/python@3.12/3.12.12_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/run/benchmarks/swebench.py", line 148, in process_instance
+    model = get_model(config=config.get("model", {}))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/models/__init__.py", line 53, in get_model
+    model_class = get_model_class(resolved_model_name, config.pop("model_class", ""))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/models/__init__.py", line 111, in get_model_class
+    from minisweagent.models.litellm_model import LitellmModel
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/models/litellm_model.py", line 9, in <module>
+    import litellm
+ModuleNotFoundError: No module named 'litellm'
+2026-02-21 17:37:59,338 - minisweagent - ERROR - Error in future for instance pallets__flask-5063: No module named 'litellm'
+Traceback (most recent call last):
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/run/benchmarks/swebench.py", line 262, in process_futures
+    future.result()
+  File "/usr/local/Cellar/python@3.12/3.12.12_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.12_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/Cellar/python@3.12/3.12.12_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/run/benchmarks/swebench.py", line 148, in process_instance
+    model = get_model(config=config.get("model", {}))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/models/__init__.py", line 53, in get_model
+    model_class = get_model_class(resolved_model_name, config.pop("model_class", ""))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/models/__init__.py", line 111, in get_model_class
+    from minisweagent.models.litellm_model import LitellmModel
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/models/litellm_model.py", line 9, in <module>
+    import litellm
+ModuleNotFoundError: No module named 'litellm'
+2026-02-21 17:40:03,021 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 17:40:09,236 - minisweagent - INFO - Instance filter: 300 -> 2 instances
+2026-02-21 17:40:09,238 - minisweagent - INFO - Running on 2 instances...
+2026-02-21 17:40:09,238 - minisweagent - INFO - Building agent config from specs: ['mini']
+2026-02-21 17:40:14,196 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-20a3488a -w / --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest sleep 2h
+2026-02-21 17:40:30,458 - minisweagent - INFO - Cancelling all pending jobs. Press ^C again to exit immediately.
+2026-02-21 17:40:30,461 - minisweagent - ERROR - Error processing instance pallets__flask-4045: Command '['docker', 'run', '-d', '--name', 'minisweagent-20a3488a', '-w', '/', '--rm', 'docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest', 'sleep', '2h']' returned non-zero exit status 130.
+Traceback (most recent call last):
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/run/benchmarks/swebench.py", line 160, in process_instance
+    env = get_sb_environment(config, instance)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/run/benchmarks/swebench.py", line 102, in get_sb_environment
+    env = get_environment(env_config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/environments/__init__.py", line 33, in get_environment
+    return get_environment_class(environment_class)(**config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/environments/docker.py", line 59, in __init__
+    self._start_container()
+  File "/Users/qixin/AntigravityProjects/cs599-code/lab_12/mini-swe-agent/src/minisweagent/environments/docker.py", line 91, in _start_container
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.12_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'run', '-d', '--name', 'minisweagent-20a3488a', '-w', '/', '--rm', 'docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest', 'sleep', '2h']' returned non-zero exit status 130.
+2026-02-21 17:50:14,930 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 17:50:25,897 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 17:50:25,899 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 17:50:25,899 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 17:50:28,775 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-dde82972 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 17:50:29,380 - minisweagent.environment - INFO - Started container minisweagent-dde82972 with ID 2f02fe8bb8afe5b43e84af24f2699a670c9654e97dcaf7242e25f2ddb712247e
+2026-02-21 17:51:15,293 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4992/pallets__flask-4992.traj.json'
+2026-02-21 17:52:57,207 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 17:53:04,017 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 17:53:04,018 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 17:53:04,019 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 17:53:06,852 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-9e99d5f7 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 17:53:07,316 - minisweagent.environment - INFO - Started container minisweagent-9e99d5f7 with ID a13ecc264770a4b8b7510b7e0fe1fab52d2e3f7bde6f169d2ff1855abd1d2955
+2026-02-21 18:01:50,938 - minisweagent - INFO - Cancelling all pending jobs. Press ^C again to exit immediately.
+2026-02-21 18:02:20,573 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 18:02:26,787 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 18:02:26,789 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 18:02:26,789 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 18:02:29,575 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-676133ac -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 18:02:29,832 - minisweagent.environment - INFO - Started container minisweagent-676133ac with ID 5b5a14bb5603789a5c59a4a2b6355cec12f451e75ccac726b8ea217af3951dad
+2026-02-21 18:05:19,361 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4992/pallets__flask-4992.traj.json'
+2026-02-21 18:08:06,282 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 18:08:12,946 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 18:08:12,947 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 18:08:12,948 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 18:08:16,247 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-03206b48 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 18:08:16,516 - minisweagent.environment - INFO - Started container minisweagent-03206b48 with ID e50e50ecdf6df758e93a468ea0df1b9443634ff68f007676571558d833478149
+2026-02-21 18:10:51,914 - minisweagent - INFO - Cancelling all pending jobs. Press ^C again to exit immediately.
+2026-02-21 18:11:07,714 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 18:11:18,535 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 18:11:18,537 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 18:11:18,537 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 18:11:21,700 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-0dce3b1c -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 18:11:21,897 - minisweagent.environment - INFO - Started container minisweagent-0dce3b1c with ID 3a1cc5f2633958629bedaf744e853df090c6f46644e641b80b3eb4eb9ecaf6f7
+2026-02-21 18:14:31,733 - minisweagent - INFO - Cancelling all pending jobs. Press ^C again to exit immediately.
+2026-02-21 18:15:36,989 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 18:15:43,075 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 18:15:43,077 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 18:15:43,077 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 18:15:45,563 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-3c60c942 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 18:15:45,842 - minisweagent.environment - INFO - Started container minisweagent-3c60c942 with ID 7ee3489c73e5ce51317c7c7eac3b9683ad19cf40115fbae1fad820bfd35bee74
+2026-02-21 18:17:13,738 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4992/pallets__flask-4992.traj.json'
+2026-02-21 18:41:46,220 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 18:41:52,371 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 18:41:52,373 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 18:41:52,373 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 18:41:57,502 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-24d132f1 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 18:41:57,801 - minisweagent.environment - INFO - Started container minisweagent-24d132f1 with ID 34c45b307b50fdb97acfa35b3daa7a363eb7d717389dc37282b320a593bd4e2d
+2026-02-21 18:43:39,457 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4992/pallets__flask-4992.traj.json'
+2026-02-21 18:58:10,607 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 18:58:16,496 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 18:58:16,498 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 18:58:16,499 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 18:58:18,820 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-30a6b19a -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 18:58:19,232 - minisweagent.environment - INFO - Started container minisweagent-30a6b19a with ID e2bac46f3906a1a103f9eae199fd501fb683228a9149bc83841c679690e1e373
+2026-02-21 18:59:14,249 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4992/pallets__flask-4992.traj.json'
+2026-02-21 19:03:09,901 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 19:03:16,663 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 19:03:16,664 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 19:03:16,665 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 19:03:19,986 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-836e6381 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 19:03:20,477 - minisweagent.environment - INFO - Started container minisweagent-836e6381 with ID 63dc74b35a9ca91047b830d39c4f09676c69037c4fa028a297f23813076efc11
+2026-02-21 19:03:53,629 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4992/pallets__flask-4992.traj.json'
+2026-02-21 19:07:49,980 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 19:07:56,710 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 19:07:56,711 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 19:07:56,711 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 19:07:59,567 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-29456475 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest sleep 2h
+2026-02-21 19:07:59,971 - minisweagent.environment - INFO - Started container minisweagent-29456475 with ID c108a26b8e2b445cddcffa5e22e1da352d1c8a2cb99d6db2f0b7ec48b3148c39
+2026-02-21 19:08:51,731 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4992/pallets__flask-4992.traj.json'
+2026-02-21 19:11:21,562 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 19:11:27,463 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 19:11:27,466 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 19:11:27,466 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 19:11:30,007 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-eb9d02c5 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest sleep 2h
+2026-02-21 19:12:16,241 - minisweagent.environment - INFO - Started container minisweagent-eb9d02c5 with ID 77a8e239ebda8035fe6f5397f39b98c8ec91b48f5336b885d5e6c2e82fdb184e
+2026-02-21 19:13:51,187 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4045/pallets__flask-4045.traj.json'
+2026-02-21 21:02:09,459 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 21:02:20,338 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 21:02:20,340 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 21:02:20,341 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 21:02:22,632 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-fd54ad7d -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest sleep 2h
+2026-02-21 21:02:23,152 - minisweagent.environment - INFO - Started container minisweagent-fd54ad7d with ID 3cf1b6d72bf6578d2fa12b3fa27a2fb352490e642e02a651623e28812abecc90
+2026-02-21 21:14:42,196 - minisweagent - INFO - Cancelling all pending jobs. Press ^C again to exit immediately.
+2026-02-21 21:15:22,844 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 21:15:29,552 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 21:15:29,554 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 21:15:29,554 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 21:15:31,924 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-7ac8e682 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest sleep 2h
+2026-02-21 21:15:32,203 - minisweagent.environment - INFO - Started container minisweagent-7ac8e682 with ID 47de71198b03787f6d2b6fa54d7898869e5f4194f9a32bdf77645004dd532122
+2026-02-21 21:16:55,243 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4045/pallets__flask-4045.traj.json'
+2026-02-21 21:29:51,419 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 21:30:07,423 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 21:30:07,425 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 21:30:07,425 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 21:30:11,394 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-fffc55b8 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest sleep 2h
+2026-02-21 21:30:11,704 - minisweagent.environment - INFO - Started container minisweagent-fffc55b8 with ID e4806b41087817e0319bc09724c96ae0bee103213dfd480a9645c03f67afcdd7
+2026-02-21 21:32:05,186 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4045/pallets__flask-4045.traj.json'
+2026-02-21 21:43:27,305 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 21:43:37,281 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 21:43:37,283 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 21:43:37,283 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 21:43:40,413 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-21e5307a -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest sleep 2h
+2026-02-21 21:43:40,790 - minisweagent.environment - INFO - Started container minisweagent-21e5307a with ID 4c1e1af8026355194988c7b36bd91da9fe5b14f257ea50afa4a2962b3273ce75
+2026-02-21 21:44:59,954 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4045/pallets__flask-4045.traj.json'
+2026-02-21 21:57:31,408 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 21:57:37,406 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 21:57:37,408 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 21:57:37,409 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 21:57:39,759 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-9148bd1d -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest sleep 2h
+2026-02-21 21:57:39,979 - minisweagent.environment - INFO - Started container minisweagent-9148bd1d with ID b21d3d7cef1de615cafe87c9ae31059af4ea94bae6ebc1f39129b0003cb51ff8
+2026-02-21 21:59:40,535 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4045/pallets__flask-4045.traj.json'
+2026-02-21 22:08:19,338 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 22:08:28,452 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 22:08:28,453 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 22:08:28,454 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 22:08:35,697 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-fea1d23e -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest sleep 2h
+2026-02-21 22:08:35,937 - minisweagent.environment - INFO - Started container minisweagent-fea1d23e with ID 4f36bb26c6692d362342e6c0645255f700829d73bbf7de53c14f4482e630ae82
+2026-02-21 22:09:31,814 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4045/pallets__flask-4045.traj.json'
+2026-02-21 22:12:35,557 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 22:12:50,842 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 22:12:50,845 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 22:12:50,846 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 22:12:53,821 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-2aed1960 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest sleep 2h
+2026-02-21 22:12:54,188 - minisweagent.environment - INFO - Started container minisweagent-2aed1960 with ID d0ee61523bb83a4fd0a634d42432c62e2c26adc732e5d416ac39199e939b535f
+2026-02-21 22:16:27,653 - minisweagent - INFO - Cancelling all pending jobs. Press ^C again to exit immediately.
+2026-02-21 22:16:46,923 - minisweagent - INFO - Loading dataset princeton-nlp/SWE-Bench_Lite, split test...
+2026-02-21 22:16:53,049 - minisweagent - INFO - Instance filter: 300 -> 1 instances
+2026-02-21 22:16:53,050 - minisweagent - INFO - Running on 1 instances...
+2026-02-21 22:16:53,050 - minisweagent - INFO - Building agent config from specs: ['src/minisweagent/config/benchmarks/swebench.yaml', 'src/minisweagent/config/my_model.yaml']
+2026-02-21 22:16:55,348 - minisweagent.environment - DEBUG - Starting container with command: docker run -d --name minisweagent-44d1ac27 -w /testbed --rm docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest sleep 2h
+2026-02-21 22:16:55,598 - minisweagent.environment - INFO - Started container minisweagent-44d1ac27 with ID db5a7e0eae505ab8e90437adb0494583ff3129e699e3ab4396e3b8e2cfd80b7a
+2026-02-21 22:17:29,897 - minisweagent - INFO - Saved trajectory to '../my_ai_predictions/pallets__flask-4045/pallets__flask-4045.traj.json'

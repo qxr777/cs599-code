@@ -23,3 +23,4 @@ env/
 # 项目特定
 lab_1/data/
 lab_2/data/
+lab_12/my_ai_predictions/exit_statuses_*.yaml
