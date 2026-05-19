@@ -33,85 +33,91 @@ export OPENAI_MODEL="gpt-4o-mini"
 ```
 lab_6/
 ├── requirements.txt          # 项目依赖
-├── product_db.py             # 商品数据库（干净 + 被污染两套数据）
-├── tools.py                  # 工具定义（Pydantic Schema）与函数实现
-├── agent_phase1.py           # Phase 1: 基础智能体
-├── agent_phase2_attack.py    # Phase 2: 间接注入攻击演示
-├── agent_phase3_defense.py   # Phase 3: 安全防御版本
+├── native_agent.py           # 实验一：原生工具调用 Agent
+├── mcp_server.py             # 实验二：MCP Server 端
+├── mcp_agent.py              # 实验二：MCP Client 端
+├── attack_demo.py            # 实验三：间接注入攻击演示
+├── defense_native.py         # 实验三：原生架构防御
+├── defense_mcp.py            # 实验三：MCP 架构防御
 └── README.md                 # 本文件
 ```
 
 ---
 
-## Phase 1: 基础智能体（The Builder）
+## 实验一：原生工具调用（Native Path）
 
 ```bash
-python agent_phase1.py
+python native_agent.py
 ```
 
-**交互示例：**
-```
-👤 你: 请查询 P001 的详细信息
-🔧 工具调用: get_product_info
-   参数: {"product_id": "P001"}
-🤖 助手: 机械键盘 Pro X 是一款87键热插拔机械键盘...
+**核心逻辑：** Define-Decide-Execute-Inform 四步循环，工具定义与 Agent 代码同进程。
 
-👤 你: 帮我算一下买 50 把 P001 多少钱
-🔧 工具调用: calculate_bulk_price
-   参数: {"product_id": "P001", "quantity": 50}
-🤖 助手: 购买50把机械键盘 Pro X，享受9折优惠...
-```
-
-**关键代码逻辑：** 观察 `while True` 循环如何实现 Define → Decide → Execute → Inform 四步协议。
+可用工具：`get_inventory`（查询库存）、`process_order`（下单购买）。
 
 ---
 
-## Phase 2: 间接注入攻击（The Breaker）
+## 实验二：MCP 协议集成（Standardized Path）
 
 ```bash
-python agent_phase2_attack.py
+python mcp_agent.py
 ```
 
-本脚本会自动以无辜用户的身份提问，触发攻击链路。
+MCP Agent 会自动通过 stdio 启动 `mcp_server.py` 子进程。
 
-**攻击链路：**
-1. 用户请求查看 P001 评价（完全正常的请求）
-2. Agent 调用 `get_product_info` 检索数据
-3. 返回的评论中包含伪装为系统指令的恶意载荷
-4. 模型被误导，调用 `delete_user_account` 高危函数
-5. 用户账号被"删除" ☠️
-
-**关键观察点：** 攻击者从未接触系统提示词，仅通过污染外部数据源即可劫持控制流。
+**MCP 协议三次握手：**
+1. `initialize` — Client/Server 握手
+2. `tools/list` — 动态发现工具
+3. `tools/call` — JSON-RPC 远程调用
 
 ---
 
-## Phase 3: 安全防御（The Defender）
+## 实验三：安全攻防（间接提示词注入）
+
+### 攻击演示
 
 ```bash
-python agent_phase3_defense.py
+python attack_demo.py
 ```
 
-输入 `auto` 可自动运行与 Phase 2 相同的攻击向量进行防御测试。
+在商品评价数据库中植入恶意载荷，验证 Context Window 劫持效果。
 
-**三层防御机制：**
+### 原生架构防御
 
-| 防御层 | 机制 | 作用 |
-|--------|------|------|
-| Layer 1 | **权限分级** | 区分安全工具（只读）与高危工具（写入/删除） |
-| Layer 2 | **HITL 人工确认** | 高危操作前弹出控制台确认，输入 Y/N |
-| Layer 3 | **Spotlighting 隔离** | 用 `<<<EXTERNAL_DATA>>>` 标记包裹外部数据，阻止注入 |
+```bash
+python defense_native.py
+```
+
+防御机制：**Spotlighting 数据定界符** + **HITL 人工确认**
+
+### MCP 架构防御
+
+```bash
+python defense_mcp.py
+```
+
+防御机制：**Client 端响应清洗** + **Server 端最小权限** + **双重意图验证**
 
 ---
 
 ## 实验提交物
 
 1. **完整代码** — 上述所有 `.py` 文件
-2. **攻击截图** — Phase 2 运行日志截图，显示 `delete_user_account` 被触发
-3. **防御代码** — Phase 3 的完整防御逻辑
-4. **实验报告** — 分析攻击原理与防御有效性
+2. **攻击截图** — `attack_demo.py` 运行日志截图，显示高危操作被触发
+3. **防御代码** — `defense_native.py` 和 `defense_mcp.py`
+4. **实验报告** — 分析攻击原理与防御有效性，对比原生架构与 MCP 架构的安全差异
+
+## 实验阶段说明
+
+| 阶段 | 文件 | 说明 |
+|------|------|------|
+| 一（原生调用） | `native_agent.py` | Define-Decide-Execute-Inform 四步循环 |
+| 二（MCP 协议） | `mcp_server.py`, `mcp_agent.py` | stdio 传输 + JSON-RPC 动态发现 |
+| 三（安全攻防） | `attack_demo.py` | 间接提示词注入攻击 |
+| 三（原生防御） | `defense_native.py` | Spotlighting + HITL |
+| 三（MCP 防御） | `defense_mcp.py` | 响应清洗 + Server 限权 + 意图校验 |
 
 ## 参考资料
 
 - [OpenAI Function Calling 文档](https://platform.openai.com/docs/guides/function-calling)
 - [OWASP — Prompt Injection](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
-- [Spotlighting: Defending Against Prompt Injection](https://arxiv.org/abs/2403.14720)
+- [Spotlighting: Defending Against Prompt Injection](https://ar599.org/abs/2403.14720)
